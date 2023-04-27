@@ -12,6 +12,9 @@ function Photos () {
         else if (i % 6 === 0) {
             return 'wide'
         }
+        else {
+            return 'normal'
+        }
     }
     
     const photoElements = allPhotos.map((photo, index) => <Image key={photo.id} img={photo} className={getClass(index)}/>)
